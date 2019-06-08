@@ -6,10 +6,9 @@ do
 	ls -lRA eval/ex$i
 	cp -R eval/ex$i/* ex$i/
 	norminette -R CheckForbiddenSourceHeader eval/ex$i/*
-	gcc -Wall -Wextra -Werror -o output ex$i/*
+	gcc -Wall -Wextra -Werror -o ex$i/output ex$i/*
 	cat eval/ex$i/*
 	read a
 	./ex$i/output
 	read a
-end
-
+done
