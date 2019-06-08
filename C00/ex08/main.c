@@ -6,13 +6,13 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 20:19:12 by badam             #+#    #+#             */
-/*   Updated: 2019/06/08 20:40:04 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/08 20:54:51 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_combn(void);
+void	ft_print_combn(int n);
 
 int		main(void)
 {
-	ft_print_combn();
+	ft_print_combn(2);
 }
