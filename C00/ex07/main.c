@@ -6,13 +6,13 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 20:19:12 by badam             #+#    #+#             */
-/*   Updated: 2019/06/08 20:38:24 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/08 20:52:56 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putnbr(void);
+void	ft_putnbr(int nb);
 
 int		main(void)
 {
