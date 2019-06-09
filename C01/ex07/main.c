@@ -6,13 +6,13 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/09 14:36:38 by badam             #+#    #+#             */
-/*   Updated: 2019/06/09 15:22:52 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/09 15:43:43 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_rev_int_tab(int *tab, int size);
+void	ft_putstr(int *tab, int size);
 
 int		main(void)
 {
