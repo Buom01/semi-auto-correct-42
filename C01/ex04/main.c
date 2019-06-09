@@ -6,13 +6,13 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 20:15:08 by badam             #+#    #+#             */
-/*   Updated: 2019/06/09 15:19:21 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/09 15:36:21 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_div_mod(int *a, int *b);
+void	ft_ultimate_div_mod(int *a, int *b);
 
 int		main(void)
 {
@@ -21,7 +21,7 @@ int		main(void)
 
 	a = 16;
 	b = 5;
-	ft_div_mod(&a, &b);
+	ft_ultimate_div_mod(&a, &b);
 	if (a == 5 && b == 1)
 	{
 		write(1, "OK\n", 3);
