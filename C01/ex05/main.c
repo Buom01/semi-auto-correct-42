@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/09 14:36:38 by badam             #+#    #+#             */
-/*   Updated: 2019/06/09 16:45:06 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/09 19:40:26 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@ void	ft_putstr(char *str);
 
 int		main(void)
 {
-	char str[10] = "0123456789";
+	char str[] = "0123456789";
+	char str1[] = "test";
 
 	printf("0123456789:\n");
 	ft_putstr(str);
+	printf("test:\n");
+	ft_putstr(str1);
 }

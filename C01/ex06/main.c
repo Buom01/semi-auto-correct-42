@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/09 14:36:38 by badam             #+#    #+#             */
-/*   Updated: 2019/06/09 16:34:25 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/09 19:41:58 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ int		ft_strlen(char *str);
 
 int		main(void)
 {
-	char str[10] = "0123456789";
+	char str[] = "0123456789";
+	char str1[] = "test";
 
 	printf("10:%d\n", ft_strlen(str));
+	printf("4:%d\n", ft_strlen(str1));
 }
