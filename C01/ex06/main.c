@@ -6,13 +6,13 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/09 14:36:38 by badam             #+#    #+#             */
-/*   Updated: 2019/06/09 15:22:00 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/09 16:09:49 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_strlen(char *str);
+int		ft_strlen(char *str);
 
 int		main(void)
 {
@@ -20,10 +20,7 @@ int		main(void)
 	char str1[12] = "0123456789ab";
 	char str2[0] = "";
 
-	printf("10:");
-	ft_strlen(str);
-	printf("\n12:");
-	ft_strlen(str1);
-	printf("\n:");
-	ft_strlen(str2);
+	printf("10:%d\n", ft_strlen(str));
+	printf("12:%d\n", ft_strlen(str1));
+	printf("0:%d\n", ft_strlen(str2));
 }
