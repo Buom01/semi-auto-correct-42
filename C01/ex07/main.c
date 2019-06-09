@@ -6,19 +6,19 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/09 14:36:38 by badam             #+#    #+#             */
-/*   Updated: 2019/06/09 15:43:43 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/09 16:11:37 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_putstr(int *tab, int size);
+void	ft_rev_int_tab(int *tab, int size);
 
 int		main(void)
 {
 	int tab[10] = {0,1,2,3,4,5,6,7,8,9};
 
 	printf("9,8,7,6,5,4,3,2,1,0:");
-	ft_putstr(tab, 10);
+	ft_rev_int_tab(tab, 10);
 	printf(":%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", tab[0], tab[1], tab[2], tab[3], tab[4], tab[5], tab[6], tab[7], tab[8], tab[9]);
 }
