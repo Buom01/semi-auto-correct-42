@@ -5,8 +5,8 @@ do
 	echo "ex$i"
 	ls -lRA eval/ex$i
 	cp -R eval/ex$i/* ex$i/
-	norminette -R CheckForbiddenSourceHeader eval/ex$i/*
-	gcc -Wall -Wextra -Werror -o ex$i/output ex$i/*
+	norminette -R CheckForbiddenSourceHeader eval/ex$i/*.c
+	gcc -Wall -Wextra -Werror -o ex$i/output ex$i/*.c
 	cat eval/ex$i/*
 	read a
 	./ex$i/output
