@@ -6,16 +6,31 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 14:59:19 by badam             #+#    #+#             */
-/*   Updated: 2019/06/10 21:01:24 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/10 21:16:06 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
 char	*ft_strupcase(char *src);
 
+void	ft_putstr(char *str)
+{
+	int l;
+
+	l = 0;
+	while (str[l])
+	{
+		l++;
+	}
+	write(1, str, l);
+}
+
 int		main()
 {
-	printf("ABCDEFG-YZ:");
-	printf("%s", ft_strupcase("AbCdEfG-Yz"));
+	char c[] = "AbCdEfG-Yz";
+	ft_putstr("ABCDEFG-YZ:");
+	ft_putstr(c);
+	ft_putstr(":");
+	ft_putstr(ft_strupcase(c));
 }
