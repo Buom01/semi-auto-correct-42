@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 14:59:19 by badam             #+#    #+#             */
-/*   Updated: 2019/06/10 22:03:56 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/11 21:31:39 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n);
 int		main()
 {
 	int i;
-	char dest[] = "Epic fail";
+	char dest[] = "Epic fail !!!!!";
 	char src[] = "Success";
-	printf("Must all be same (3 lines):\n%s\n%s\n%s\n", src, ft_strncpy(dest, src, 9), dest);
+	printf("Must all be same (3 lines):\n%s\n%s\n%s\n", src, ft_strncpy(dest, src, 15), dest);
 	i = 8;
 	while (i < 9)
 	{
