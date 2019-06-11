@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 14:59:19 by badam             #+#    #+#             */
-/*   Updated: 2019/06/10 22:02:49 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/11 16:41:58 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int		main()
 {
 	char c[] = "AbCdEfG-Yz";
 	ft_putstr("ABCDEFG-YZ:");
-	ft_putstr(c);
-	ft_putstr(":");
 	ft_putstr(ft_strupcase(c));
+	ft_putstr(":");
+	ft_putstr(c);
 }
