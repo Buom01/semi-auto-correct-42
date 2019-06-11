@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 14:59:19 by badam             #+#    #+#             */
-/*   Updated: 2019/06/11 23:56:04 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/11 23:58:37 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		main()
 	{
 		if (dest[i] != '\0')
 		{
-			printf("FAIL! Remainder of dst must be filled with `\\0' characters, got %s\n", dest[i]);
+			printf("FAIL! Remainder of dst must be filled with `\\0' characters, got %c (\\%x)\n", dest[i], dest[i]);
 			return (1);
 		}
 		i++;
