@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 14:59:19 by badam             #+#    #+#             */
-/*   Updated: 2019/06/12 00:02:41 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/12 00:07:37 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int		main()
 	char dest[] = "Epic fail !!!!!";
 	char src[] = "Success";
 	printf("%s\n%s\n%s\n", src, ft_strncpy(dest, src, 15), dest);
-	i = 8;
+	i = 9;
 	while (i < 15)
 	{
 		if (dest[i] != '\0')
