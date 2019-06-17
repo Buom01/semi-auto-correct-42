@@ -1,2 +1,2 @@
 #!/bin/sh
-./output "A" "Q" "B" "Z" "D" "0"
+./ex03/output "A" "Q" "B" "Z" "D" "0"

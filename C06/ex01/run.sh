@@ -1,2 +1,2 @@
 #!/bin/sh
-./output "S" "u" "c" "c" "e" "s" "s"
+./ex01/output "S" "u" "c" "c" "e" "s" "s"
