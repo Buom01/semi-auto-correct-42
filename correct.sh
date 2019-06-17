@@ -9,6 +9,10 @@ do
 	gcc -Wall -Wextra -Werror -o ex$i/output ex$i/*.c
 	cat eval/ex$i/*
 	read a
-	./ex$i/output
+	if [ -f "./ex$i/run.sh" ]; then
+		./ex$i/run.sh
+	else
+		./ex$i/output
+	fi
 	read a
 done
