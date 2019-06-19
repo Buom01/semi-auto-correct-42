@@ -12,6 +12,8 @@ git clone ${PROJET_GIT} eval
 ../correct.sh
 ```
 
+Merci de mettre une Star si ce projet vous a été utile.
+
 Note: Je ne prenderais probablement pas le temps de faciliter l'utilisation de cet outil durant la piscine. L'utilisation de ce programme n'est pas très compliqué.
 
 ## Règles d'utilisations
