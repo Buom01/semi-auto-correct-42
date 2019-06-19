@@ -24,10 +24,11 @@ Note: Je ne prenderais probablement pas le temps de faciliter l'utilisation de c
 
 ## Conseils
 - Vérifiez bien que le projet que vous souhaitez corriger est disponible sur cet outil.
-- Utilisez-le sur vos projet avant de l'utiliser pour corriger les autres.
-- Expliquer bien au corrigé que vous utilisez un outil de correction, et préférez affirmer à qui appartient l'outil plutôt que de dire que d'affirmer vaguement qu'il appartient à un piscineux lambda.
+- Utilisez-le sur vos projets avant de l'utiliser pour corriger les autres.
+- Expliquer bien au corrigé que vous utilisez un outil de correction, et préférez affirmer à qui appartient l'outil plutôt que d'affirmer vaguement qu'il appartient à un piscineux lambda.
 
 ## Avertissement
 J'essaie de mettre à jour mes tests en accord avec la moulinette pour pouvoir avoir une explication directe des erreurs du corrigé et lui permettre ainsi une meilleur compréhension de ses erreurs.
 Comprenez que la moulinette est une boite noir qui n'est pas constante dans le temps. Je vous recommande ainsi de checker régulièrement la partie 'issues' afin d'être au courant des différents changement reportés sur la moulinette.
 En cas de problème avec cet outil, vous en assumerez pleinement les conséquences. Cet outil est disponible tel quel.
+Ce document est suceptible de changer fréquement. Vous êtes tenu de vous tenir informé dès lors que vous utilisez l'outil `semi-auto-correct`.
