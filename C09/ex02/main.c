@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 04:19:18 by badam             #+#    #+#             */
-/*   Updated: 2019/06/24 23:04:09 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/25 20:17:51 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,5 +81,23 @@ int		main(void)
 	tab = ft_split("Success", "");
 	printf("%s\n", c_strjoin(1, tab, " "));
 	tab = ft_split("", "");
+	printf("OK\n");
 	tab = ft_split("", "CUT");
+	printf("OK\n");
+	tab = ft_split("       ", "       ");
+	printf("OK\n");
+	tab = ft_split("         ", "       ");
+	printf("OK\n");
+	tab = ft_split("aaaa", "aaa");
+	printf("OK\n");
+	tab = ft_split("aaa", "a");
+	printf("OK\n");
+	tab = ft_split("aaa", "aaaa");
+	printf("OK\n");
+	tab = ft_split("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaa");
+	printf("OK\n");
+	tab = ft_split("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "a");
+	printf("OK\n");
+	tab = ft_split("aaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+	printf("OK\n");
 }
