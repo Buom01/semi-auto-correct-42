@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 04:19:18 by badam             #+#    #+#             */
-/*   Updated: 2019/06/25 20:17:51 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/26 01:15:44 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int		c_strctn(char *str1, char *str2, int at)
 	return (len + at);
 }
 
-char	*c_strjoin(int size, char **strs, char *sep)
+char	*c_strautojoin(char **strs, char *sep)
 {
 	char	*str;
 	int		len;
@@ -52,19 +52,20 @@ char	*c_strjoin(int size, char **strs, char *sep)
 	len = 1;
 	seplen = c_strlen(sep);
 	i = 0;
-	while (i < size)
+	while (strs[i] != NULL)
 	{
 		len += c_strlen(strs[i]);
-		if (++i < size)
+		if (strs[i + 1] != NULL)
 			len += seplen;
+		i++;
 	}
 	str = malloc(len * sizeof(char));
 	i = 0;
 	j = 0;
-	while (j < size)
+	while (strs[j])
 	{
 		i = c_strctn(str, strs[j++], i);
-		if (j != size)
+		if (strs[j])
 			i = c_strctn(str, sep, i);
 	}
 	return (str);
@@ -75,11 +76,11 @@ int		main(void)
 	char **tab;
 
 	tab = ft_split("CeciCUTestCUTunCUTsuccesCUT!", "CUT");
-	printf("%s\n", c_strjoin(5, tab, " "));
+	printf("%s\n", c_strautojoin(tab, " "));
 	tab = ft_split("Success", "CUT");
-	printf("%s\n", c_strjoin(1, tab, " "));
+	printf("%s\n", c_strautojoin(tab, " "));
 	tab = ft_split("Success", "");
-	printf("%s\n", c_strjoin(1, tab, " "));
+	printf("%s\n", c_strautojoin(tab, " "));
 	tab = ft_split("", "");
 	printf("OK\n");
 	tab = ft_split("", "CUT");
