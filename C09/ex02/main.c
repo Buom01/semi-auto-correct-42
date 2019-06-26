@@ -6,7 +6,7 @@
 /*   By: badam <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 04:19:18 by badam             #+#    #+#             */
-/*   Updated: 2019/06/26 01:15:44 by badam            ###   ########.fr       */
+/*   Updated: 2019/06/27 01:14:26 by badam            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int		main(void)
 {
 	char **tab;
 
-	tab = ft_split("CeciCUTestCUTunCUTsuccesCUT!", "CUT");
+	tab = ft_split("Ceci&est$un#succes@!", "&$#@");
 	printf("%s\n", c_strautojoin(tab, " "));
 	tab = ft_split("Success", "CUT");
 	printf("%s\n", c_strautojoin(tab, " "));
@@ -88,17 +88,5 @@ int		main(void)
 	tab = ft_split("       ", "       ");
 	printf("OK\n");
 	tab = ft_split("         ", "       ");
-	printf("OK\n");
-	tab = ft_split("aaaa", "aaa");
-	printf("OK\n");
-	tab = ft_split("aaa", "a");
-	printf("OK\n");
-	tab = ft_split("aaa", "aaaa");
-	printf("OK\n");
-	tab = ft_split("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaa");
-	printf("OK\n");
-	tab = ft_split("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "a");
-	printf("OK\n");
-	tab = ft_split("aaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 	printf("OK\n");
 }
